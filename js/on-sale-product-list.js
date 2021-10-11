@@ -6,7 +6,7 @@ async function getOnSaleProducts(productsUrl) {
 
 function renderProducts(products) {
     const productContainer = document.querySelector('.swiper-wrapper');
-    for (const product in products) {
+    for (const product of products) {
         productContainer.innerHTML += 
             `<div class=swiper-slide>
                 <img src="${product.img}" alt="${product.name}">
